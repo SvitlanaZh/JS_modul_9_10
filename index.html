@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> COFFFE BREAK </title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+    <script type="text/javascript" src="js/jquery.customSelect.js"></script>
+	<script type="text/javascript" src="js/task_9-10.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1> Take a coffee break!</h1>
+    <!--==================MENU===========-->
+        <nav>
+            <ul class="content clearfix">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li class="dropdown"> <a href="#">Sorts of cofee</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Cold brew</a></li>
+                        <li><a href="#">Vacuum coffee</a></li>
+                        <li class="dropdown"><a href="#">Espresso</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Americano</a></li>
+                                <li><a href="#">Doppio</a></li>
+                                <li><a href="#">Guillermo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Turkish coffee</a></li>
+                        <li><a href="#">Espresso with milk</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--==================CAROUSEL======================-->
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
+            <ul>
+                <li><img src="img/1.jpg" alt="cofee" ></li>
+                <li><img src="img/2.jpg" alt="cofee" ></li>
+                <li><img src="img/3.jpg" alt="cofee" ></li>
+                <li><img src="img/4.jpg" alt="cofee" ></li>
+                <li><img src="img/5.jpg" alt="cofee" ></li>
+            </ul>
+        </div>
+        <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+        <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+        <p class="jcarousel-pagination"></p>
+    </div>
+
+<!--==================CHECKBOXES=================-->
+    <form action="index.html" method="post">
+        <div class="checkbox clearfix">
+            <div class="checkbox__jquery">
+                <h3>What type of coffee do you prefer?</h3>
+                <p> Espresso<span class="niceCheck first"><input type="checkbox" name="ch1" /></span></p>
+                <p> Latte<span class="niceCheck second"><input type="checkbox" name="ch1" /></span></p>
+                <p> Americano<span class="niceCheck third"><input type="checkbox" name="ch1" /></span></p>
+                <p> Cappuccino<span class="niceCheck fourth"><input type="checkbox" name="ch1" /></span></p>
+            </div>
+
+            <div class="checkbox__css">
+                <h3>What about sweets?</h3>
+                <div >
+                    <input type="checkbox" id="test-check1" class="input__css">
+                    <label for="test-check1" class="checkbox__css--first">Choco-cake</label>
+                </div>
+
+                <div >
+                    <input type="checkbox" id="test-check2" class="input__css" >
+                    <label for="test-check2" class="checkbox__css--second">Cheese-cake</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="test-check3" class="input__css">
+                    <label for="test-check3" class="checkbox__css--third">Pan-cakes</label>
+                </div>
+            </div>
+
+<!--==================SELECT=================-->
+        <div class="select">
+                <h3>The best cofee in Ukraine is in ...</h3>
+                <select class="choices" id="citys" name="animals">
+                    <option value="1">Kiev</option>
+                    <option value="2">Lviv</option>
+                    <option value="3">Harkov</option>
+                    <option value="4">Odessa</option>
+                    <option value="4">Donetsk</option>
+                    <option value="4">Vinnica</option>
+                    <option value="4">Hmelnickij</option>
+                    <option value="4">Ivano-Frankivsk</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
